@@ -23,3 +23,6 @@ path = "src/main.rs"
 [dependencies]
 
 
+# Platform specific dependencies
+[target.'cfg(target_arch = "aarch64")'.dependencies]
+cortex-a = { version = "7.x.x" }
