@@ -30,8 +30,9 @@ path = "src/main.rs"
 
 ```mermaid
 sequenceDiagram 
-Note right of Makefile: linker tells the <br> entry address (.) 
+
 Makefile ->> Cargo: build
+Note right of Cargo: linker tells the <br> entry address (.) 
 Note right of Cargo: ELF to <br>./target/aarch~/release/kernel
 Cargo ->> File: 
 Makefile ->> File: generate ./kernel8.img
